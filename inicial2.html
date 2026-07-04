@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Centraliza todo o conteúdo no meio exato da tela */
+        body {
+            background-color: #f9f7f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Usa a altura total da tela */
+            font-family: sans-serif;
+
+                        /* Garante que o fundo ocupe toda a altura da tela */
+            height: 100vh;
+            margin: 0;
+            
+            /* Define o GIF como fundo */
+            background-image: url(agua2.gif);
+            
+            /* Centraliza a imagem na tela */
+            background-position: center;
+            
+            /* Faz a imagem cobrir toda a área sem distorcer muito */
+            background-size: cover;
+            
+            /* Evita que o GIF se repita como um mosaico */
+            background-repeat: no-repeat;
+            
+            /* Mantém o fundo fixo ao rolar a página (opcional) */
+            background-attachment: fixed;
+        }
+
+        /* Caixa que segura o título e o link alinhados em coluna (um abaixo do outro) */
+        .conteudo-central {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px; /* Deixa os cantos levemente arredondados e modernos */
+            max-width: 90%; /* Evita que quebre em telas de celular */
+        }
+
+        /* Estilo do seu título com o efeito Neon */
+        .tam {
+            color: #fff;
+            font-size: 55px; /* Ajustado para 55px para caber melhor na caixa */
+            margin: 0 0 30px 0; /* Remove margens e adiciona 30px de espaço apenas embaixo */
+            text-shadow: 
+                0 0 5px #fff, 
+                0 0 10px #66ddbd, 
+                0 0 20px #66ddbd, 
+                0 0 40px #66ddbd;
+            animation: oscilarBrilho 1.5s infinite alternate;
+        }
+
+        /* Estilo do seu link/botão */
+        .tamanho {
+            font-size: 35px;
+            color: #44576d;
+            text-decoration: none; /* Remove o sublinhado feio do link */
+            font-weight: bold;
+            transition: transform 0.2s; /* Efeito suave ao passar o mouse */
+        }
+
+        .tamanho:hover {
+            color: #2d6d5c; /* Muda para a cor do neon ao passar o mouse */
+            transform: scale(1.05); /* Aumenta levemente de tamanho */
+
+            font-weight: bold;
+  /* Define o nome da animação, duração de 0.8s, repetição infinita */
+  animation: piscar 1.0s infinite step-start; 
+}
+
+@keyframes piscar {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+        }
+
+        /* Animação que faz o brilho do Neon pulsar */
+        @keyframes oscilarBrilho {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px #2d6d5c, 0 0 20px #2d6d5c;
+            }
+            to {
+                text-shadow: 0 0 10px #fff, 0 0 20px #2d6d5c, 0 0 40px #2d6d5c, 0 0 60px #2d6d5c;
+            }
+ 
+        }
+
+        .btn-lateral {
+            position: fixed;
+            bottom: 20px; /* Distância de 20px do fundo da tela */
+            background-color: #3c5759; /* Cor do seu título principal */
+            color: #efece9; /* Cor do seu fundo */
+            text-decoration: none;
+            padding: 12px 25px;
+            font-family: 'Lucida Sans', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            border: 2px solid #959d90;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            z-index: 100; /* Garante que fiquem por cima de tudo */
+        }
+
+        /* Posição do botão voltar (Canto inferior esquerdo) */
+        .btn-voltar {
+            left: 20px;
+        }
+
+        /* Posição do botão avançar (Canto inferior direito) */
+        .btn-avancar {
+            right: 20px;
+        }
+
+        /* Efeito de hover ao passar o mouse nos botões */
+        .btn-lateral:hover {
+            background-color: #959d90;
+            color: #3c5759;
+            transform: scale(1.05); /* Efeito de crescer levemente */
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- Esta div junta os dois elementos e os força a ficar um embaixo do outro -->
+    <div class="conteudo-central">
+        <h1 class="tam">Hardware</h1>
+        <a class="tamanho" href="fisico.html">Continuar</a>
+    </div>
+
+    <a href="inicial.html" class="btn-lateral btn-voltar">◀ Voltar</a>
+
+</body background-image: url >
+</html>

@@ -1,0 +1,116 @@
+body{
+    background-size: 1366px;
+}
+
+hr {
+    background-color: #000000;
+    border: none;
+    height: 1px;
+    margin: 20px auto;
+}
+
+h1{
+    color:rgb(17, 114, 17); -webkit-text-stroke: black 0.5px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 50px;
+    text-align: center;
+}
+
+.destaque{
+    color: rgb(17, 114, 17);
+}
+
+.cabeza1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000;
+    width: 1265px;
+    background-color: rgba(255, 160, 52, 0.5);
+    backdrop-filter: blur(10px);
+
+}
+
+.hero{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.conteudo{
+    background-color: rgba(255, 160, 52, 0.5);
+    backdrop-filter: blur(10px);
+    width: 1265px;
+}
+
+.exemplos{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.computer{
+    position: absolute; top: 15px; left: 900px;
+    width: 250px;
+}
+
+.geladeira{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.vr{
+    display: block;
+    position: absolute; top: 820px; left: 25px;
+    width: 300px;
+}
+
+.games{
+    display: block;
+    position: absolute; top: 790px; left: 950px;
+    width: 300px;
+}
+
+.tresD{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.btn-lateral {
+            position: fixed;
+            bottom: 20px; /* Distância de 20px do fundo da tela */
+            background-color: rgb(17, 114, 17); /* Cor do seu título principal */
+            color: #efece9; /* Cor do seu fundo */
+            text-decoration: none;
+            padding: 12px 25px;
+            font-family: 'Lucida Sans', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid #000000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            z-index: 100; /* Garante que fiquem por cima de tudo */
+        }
+
+        /* Posição do botão voltar (Canto inferior esquerdo) */
+        .btn-voltar {
+            left: 20px;
+        }
+
+        /* Posição do botão avançar (Canto inferior direito) */
+        .btn-avancar {
+            right: 20px;
+        }
+
+        /* Efeito de hover ao passar o mouse nos botões */
+        .btn-lateral:hover {
+            background-color: #838383;
+            color: #000000;
+            transform: scale(1.05); /* Efeito de crescer levemente */
+        }
